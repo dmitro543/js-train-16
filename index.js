@@ -294,18 +294,18 @@ function countVowelsAndConsonants(word) {
   // Перевіряємо, чи є літера в нашому рядку з голосними, якщо так, то виводимио лічильник голосних, інакше приголосних
   // Скидаємо лічильники
   const vowels = "aeiou";
-  let vowelsCount = 0;
+  let Count = 0;
   let consonantsCount = 0;
   for (const vowel of word) {
     const letter = vowel.toLowerCase();
     if (vowels.includes(letter)) {
-      vowelsCount ++;
+      Count ++;
     } else {
       consonantsCount ++;
     }
   }
   console.info(
-    `There are ${vowelsCount} vowels and ${consonantsCount} consonants in ${word}`
+    `There are ${Count} vowels and ${consonantsCount} consonants in ${word}`
   );
 }
 console.log("Завдання: 10 ==============================");
